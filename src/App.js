@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Github from "./Components/Github";
+
 import Contacts from "./Components/Contacts";
 import AnimatedCursor from "react-animated-cursor";
 import MiniPro from "./Components/MiniPro";
