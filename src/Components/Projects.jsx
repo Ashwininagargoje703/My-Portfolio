@@ -229,7 +229,7 @@ const DIV = styled.div`
 
   .icon-link {
     font-size: 1.5rem;
-    color: #fff;
+    color: gray;
     transition: transform 0.2s ease, color 0.2s ease;
   }
 

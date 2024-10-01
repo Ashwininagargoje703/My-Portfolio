@@ -19,7 +19,7 @@ import { FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineArrowDown, AiOutlineDownload } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
-import Resume from "./Resume/AshwiniResume.pdf";
+import Resume from "./Resume/Resume.pdf";
 import gsap from "gsap";
 
 const Home = () => {
@@ -113,9 +113,9 @@ const Home = () => {
             >
               <a
                 id="resume-link-1"
-                href="https://your-resume-link.com/AshwiniResume.pdf"
+                href="https://drive.google.com/drive/folders/14XGkp-PrFGMajZ7-mQGcW0gsFNxQ1KgO"
                 target="_blank"
-                download="AshwiniResume.pdf"
+                download="ShahnawazResume.pdf"
               >
                 Resume
               </a>
@@ -128,21 +128,21 @@ const Home = () => {
             <Flex gap="3">
               <Link
                 id="contact-linkedin"
-                href="https://www.linkedin.com/in/ashwini-nagargoje-259b5122b/"
+                href="https://www.linkedin.com/in/shahnawaz8/"
                 isExternal
               >
                 <ImLinkedin fontSize={"1.6rem"} />
               </Link>
               <Link
                 id="contact-github"
-                href="https://github.com/Ashwininagargoje703"
+                href="https://github.com/shahnawaz8"
                 isExternal
               >
                 <FaGithub fontSize={"1.6rem"} />
               </Link>
               <Link
                 id="contact-email"
-                href="https://ashwininagargoje703@gmail.com"
+                href="https://mohdshahnawaz846@gmail.com"
                 isExternal
               >
                 <HiOutlineMail fontSize={"1.6rem"} />

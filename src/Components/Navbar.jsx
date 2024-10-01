@@ -13,7 +13,7 @@ import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Helmet } from "react-helmet";
 import { animateScroll as scroll } from "react-scroll";
-import Resume from "./Resume/AshwiniResume.pdf";
+import Resume from "./Resume/Resume.pdf";
 import Sidebar from "./Sidebar";
 import "animate.css/animate.min.css";
 import AOS from "aos";
@@ -210,9 +210,9 @@ const Navbar = () => {
             >
               <a
                 id="resume-link-1"
-                href="https://your-resume-link.com/AshwiniResume.pdf"
+                href="https://drive.google.com/drive/folders/14XGkp-PrFGMajZ7-mQGcW0gsFNxQ1KgO"
                 target="_blank"
-                download="AshwiniResume.pdf"
+                download="ShahnawazResume.pdf"
               >
                 Resume
               </a>

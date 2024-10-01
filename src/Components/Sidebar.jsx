@@ -12,7 +12,7 @@ import {
 import React, { useState } from "react";
 import { useDisclosure } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import Resume from "./Resume/AshwiniResume.pdf";
+import Resume from "./Resume/Resume.pdf";
 
 import { AiOutlineDownload } from "react-icons/ai";
 
@@ -54,7 +54,7 @@ const Sidebar = () => {
                 id="resume-link-1"
                 href={Resume}
                 target="_blank"
-                download="AshwiniResume.pdf"
+                download="Resume.pdf"
               >
                 Resume
               </a>
