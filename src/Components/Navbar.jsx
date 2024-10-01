@@ -18,6 +18,7 @@ import Sidebar from "./Sidebar";
 import "animate.css/animate.min.css";
 import AOS from "aos";
 import styled from "styled-components";
+import gsap from "gsap";
 
 const Logo = styled.div`
   //   font-family: "Philosopher", sans-serif;
@@ -92,13 +93,26 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const [title, setTitle] = useState("Home");
   useEffect(() => {
+    gsap.fromTo(
+      "#resume-button-1",
+      { scale: 1 },
+      {
+        scale: 1.1,
+        duration: 0.6,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+      }
+    );
+  }, []);
+  useEffect(() => {
     AOS.init({ duration: 2500 });
   }, []);
   return (
     <>
       <div>
         <Helmet>
-          <title>{`Ashwini | ${title}`}</title>
+          <title>{`Mohd Shahnawaz | ${title}`}</title>
         </Helmet>
       </div>
       <Box
@@ -119,7 +133,7 @@ const Navbar = () => {
           <Box marginLeft={{ base: "2px", lg: "2rem" }}>
             <Logo onClick={() => scroll.scrollToTop()}>
               <span class="grey-color"> &lt;</span>
-              <span class="logo-name">Ashwini Nagargoje</span>
+              <span class="logo-name">Mohd Shahnawaz</span>
               <span class="grey-color">/&gt;</span>
             </Logo>
           </Box>
@@ -169,7 +183,6 @@ const Navbar = () => {
 
             <Button
               width="max-content"
-              colorScheme={"red"}
               id="resume-button-1"
               className="nav-link resume"
               onClick={() => {
@@ -178,17 +191,33 @@ const Navbar = () => {
                   "_blank"
                 );
               }}
+              _hover={{
+                transform: "scale(1.1)",
+                transition: "all 0.3s ease-in-out",
+              }} // Adds hover effect
+              _active={{ transform: "scale(0.9)" }}
+              _focus={{ boxShadow: "outline" }}
+              bgGradient="linear-gradient(135deg, #3ab5b0 0%, #3d99be 31%, #56317a 100%)" // Gradient background
+              color="white" // Text color
+              p="3" // Padding for larger clickable area
+              borderRadius="md" // Rounded corners
+              _hover={{
+                bgGradient:
+                  "linear-gradient(135deg, #3ab5b0 0%, #3d99be 31%, #56317a 100%)", // Reverse gradient on hover
+                transform: "scale(1.05)", // Slight scale on hover
+                transition: "all 0.3s ease-in-out",
+              }}
             >
               <a
                 id="resume-link-1"
-                href={Resume}
+                href="https://your-resume-link.com/AshwiniResume.pdf"
                 target="_blank"
                 download="AshwiniResume.pdf"
               >
                 Resume
               </a>
-              <Text as="span" ml={"2"}>
-                <AiOutlineDownload fontSize={"1.2rem"} />
+              <Text as="span" ml="2">
+                <AiOutlineDownload fontSize="1.2rem" />
               </Text>
             </Button>
             <Button onClick={toggleColorMode}>

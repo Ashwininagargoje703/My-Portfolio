@@ -47,7 +47,7 @@ export default function Contacts() {
               leftIcon={<MdPhone color="green" size="20px" />}
               data-aos="zoom-in-up"
             >
-              +91-9699729802
+              +91 8650090359
             </Button>
             <Button
               size="md"
@@ -59,7 +59,7 @@ export default function Contacts() {
               leftIcon={<MdEmail color="#1970F1" size="20px" />}
               data-aos="zoom-in-up"
             >
-              ashwininagargoje703@gmail.com
+              mohdshahnawaz846@gmail.com
             </Button>
             <Button
               size="md"
@@ -70,7 +70,7 @@ export default function Contacts() {
               leftIcon={<MdLocationOn color="red" size="20px" />}
               data-aos="zoom-in-up"
             >
-              Pune Maharashtra, India
+              New Delhi, India
             </Button>
           </SimpleGrid>
         </HStack>
@@ -84,7 +84,7 @@ export default function Contacts() {
           >
             <Link
               id="contact-linkedin"
-              href="https://www.linkedin.com/in/ashwini-nagargoje-259b5122b/"
+              href="https://www.linkedin.com/in/shahnawaz8/"
               isExternal
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
@@ -94,7 +94,7 @@ export default function Contacts() {
             </Link>
             <Link
               id="contact-github"
-              href="https://github.com/Ashwininagargoje703"
+              href="https://github.com/shahnawaz8"
               isExternal
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
@@ -104,7 +104,7 @@ export default function Contacts() {
             </Link>
             <Link
               id="contact-email"
-              href="https://ashwininagargoje703@gmail.com"
+              href="mohdshahnawaz846@gmail.com"
               isExternal
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"

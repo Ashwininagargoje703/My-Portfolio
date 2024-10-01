@@ -5,7 +5,6 @@ const About = () => {
     <>
       <Text
         fontSize="4xl"
-        fontWeight="600"
         margin="auto"
         textAlign="center"
         id="about"
@@ -33,7 +32,7 @@ const About = () => {
             borderRadius="50%"
             boxShadow={"-2px -2px 5px #fff, 2px 2px 5px #babecc"}
             // src="https://www.alwin.io/images/wazirx/banner_img.webp"
-            src="https://i.ibb.co/MgTvvVN/avtar.jpg"
+            src="https://i.ibb.co/nsJ0CRC/ms.jpg"
           />
           {/* https://avatars.githubusercontent.com/u/106812942?v=4 */}
         </Box>
@@ -47,17 +46,12 @@ const About = () => {
           fontSize={"1.3rem"}
           data-aos="fade-left"
         >
-          A passionate and experienced Full Stack Developer skilled in the MERN
-          stack. Passion and diligence are two traits that best reflect me as an
-          individual. I believe enthusiasm, patience, and positivity are key to
-          bringing about meaningful change. I am actively ready to join a
-          dynamic and lively startup team, adapt to any situation and
-          environment with ease, and perform at my best. Additionally, I am keen
-          to contribute to innovative Web3 projects, leveraging my expertise in
-          blockchain development, smart contracts, and decentralized
-          applications (dApps). My strong problem-solving abilities and
-          dedication to continuous learning make me an ideal fit for developing
-          cutting-edge solutions.
+          Highly motivated Full Stack Developer with expertise in MERN stack
+          (MongoDB, Express.js, React, Node.js). Passionate and diligent, with
+          strong problem-solving skills and a dedication to continuous learning.
+          Proficient in developing scalable, efficient, and secure backend
+          solutions with Node.js and Express.js. Collaborative team player with
+          excellent adaptability, enthusiasm, and positivity.
         </Box>
       </Flex>
     </>

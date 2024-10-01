@@ -1,6 +1,6 @@
 {
   "homepage": "https://mdfaizan973.github.io",
-  "name": "faizans-portfolios",
+  "name": "shahnawaz-portfolios",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +15,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "framer-motion": "^10.8.5",
+    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.5.2",
     "react-animation-on-scroll": "^5.1.0",

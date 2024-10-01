@@ -19,7 +19,7 @@ export default function Education() {
       <div class="timeline">
 
       <div class="container right">
-          <Card s>
+          <Card s  bgGradient="linear(to-r, rgba(58, 181, 176, 0.7), rgba(61, 153, 190, 0.7))">
             <div class="content" data-aos="flip-down">
               <h2>Full Stack Developer and Web3</h2>
               <h3>BlockMagix Bengaluru, Karnataka, India</h3>
@@ -28,16 +28,16 @@ export default function Education() {
           </Card>
         </div>
         <div class="container left">
-          <Card s>
+          <Card s  bgGradient="linear(to-r, rgba(58, 181, 176, 0.7), rgba(61, 153, 190, 0.7))">
             <div class="content" data-aos="flip-down">
-              <h2>Frontend Developer </h2>
-              <h3>AskFundU Delhi, NCR</h3>
-              <p>August 2022 -December 2023, </p>
+              <h2>Full Stack Web Developer </h2>
+              <h3>BuyUme New Delhi, NCR</h3>
+              <p>July 2022 - Feb 2024, </p>
             </div>
           </Card>
         </div>
         <div class="container right">
-          <Card s>
+          <Card s  bgGradient="linear(to-r, rgba(58, 181, 176, 0.7), rgba(61, 153, 190, 0.7))">
             <div class="content" data-aos="flip-down">
               <h2>Full Stack Web Developement</h2>
               <h3>Masai School</h3>
@@ -46,27 +46,17 @@ export default function Education() {
           </Card>
         </div>
         <div class="container left">
-          <Card>
-            <Card>
+          <Card >
+            <Card  bgGradient="linear(to-r, rgba(58, 181, 176, 0.7), rgba(61, 153, 190, 0.7))">
               <div class="content" data-aos="flip-up">
-                <h2>BTech in Electrical Engineering</h2>
-                <h3>Dr. Babasaheb Ambedkar Technological University</h3>
-                <p>June 2018 - July 2021</p>
-              </div>
+                <h2>BTech in Computer Science Engineering</h2>
+                <h3> Dr. A.P.J. Abdul Kalam Technical University (AKTU)</h3>
+                <p> 2019</p>
+              </div> 
             </Card>
           </Card>
         </div>
-        <div class="container right">
-          <Card>
-            <Card>
-              <div class="content" data-aos="flip-down">
-                <h2>Diploma in Electrical Engineering</h2>
-                <h3>MSBTE, Mumbai</h3>
-                <p>july 2015 - May 2018</p>
-              </div>
-            </Card>
-          </Card>
-        </div>
+    
       </div>
     </div>
   );

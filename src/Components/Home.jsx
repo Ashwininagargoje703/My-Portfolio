@@ -20,10 +20,24 @@ import { HiOutlineMail } from "react-icons/hi";
 import { AiOutlineArrowDown, AiOutlineDownload } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
 import Resume from "./Resume/AshwiniResume.pdf";
+import gsap from "gsap";
 
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2500 });
+  }, []);
+  useEffect(() => {
+    gsap.fromTo(
+      "#resume-button-1",
+      { scale: 1 },
+      {
+        scale: 1.1,
+        duration: 0.6,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+      }
+    );
   }, []);
   return (
     <>
@@ -45,8 +59,13 @@ const Home = () => {
           gap="1rem"
           padding={5}
         >
-          <Heading id="user-detail-name" fontSize={"2rem"} textAlign={"start"}>
-            Hi I am Ashwini Nagargoje
+          <Heading
+            id="user-detail-name"
+            fontSize={"2rem"}
+            textAlign={"start"}
+            fontFamily={"Neue Machina"}
+          >
+            Hi I am Mohd Shahnawaz
           </Heading>
           <Text fontSize={"1.4rem"} textAlign={"start"}>
             <Typewriter
@@ -58,18 +77,16 @@ const Home = () => {
             />
           </Text>
           <Text textAlign={"start"} fontSize={"1.1rem"}>
-            I am an experienced full stack and Web3 developer skilled in the
-            MERN stack , Wallet integration (MetaMask, WalletConnect), Web3.js / Ethers.js, with a strong foundation in blockchain development,
-            smart contracts, and dApps. My freelancing background showcases my
-            adaptability and expertise. I am eager to join a forward-thinking
-            startup to contribute to innovative Web3 projects and help shape the
-            future of the decentralized web.
+            I am an experienced & Highly skilled Full Stack MERN Developer with
+            expertise in MongoDB, Express.js, React, and Node.js. Proficient in
+            developing scalable and secure web applications with a strong focus
+            on performance. Experienced in integrating Web3 technologies,
+            including MetaMask and WalletConnect, with blockchain expertise..
           </Text>
           <Flex gap={"8"} align="center">
             <Button
               width="max-content"
-              colorScheme={"red"}
-              id="resume-button-2"
+              id="resume-button-1"
               className="nav-link resume"
               onClick={() => {
                 window.open(
@@ -77,21 +94,37 @@ const Home = () => {
                   "_blank"
                 );
               }}
+              _hover={{
+                transform: "scale(1.1)",
+                transition: "all 0.3s ease-in-out",
+              }} // Adds hover effect
+              _active={{ transform: "scale(0.9)" }}
+              _focus={{ boxShadow: "outline" }}
+              bgGradient="linear-gradient(135deg, #3ab5b0 0%, #3d99be 31%, #56317a 100%)" // Gradient background
+              color="white" // Text color
+              p="3" // Padding for larger clickable area
+              borderRadius="md" // Rounded corners
+              _hover={{
+                bgGradient:
+                  "linear-gradient(135deg, #3ab5b0 0%, #3d99be 31%, #56317a 100%)", // Reverse gradient on hover
+                transform: "scale(1.05)", // Slight scale on hover
+                transition: "all 0.3s ease-in-out",
+              }}
             >
               <a
-                id="resume-link-2"
-                href={Resume}
+                id="resume-link-1"
+                href="https://your-resume-link.com/AshwiniResume.pdf"
                 target="_blank"
-                rel="noreferrer"
                 download="AshwiniResume.pdf"
               >
                 Resume
               </a>
-              <Text as="span" ml={"2"}>
-                <AiOutlineDownload fontSize={"1.2rem"} />
+              <Text as="span" ml="2">
+                <AiOutlineDownload fontSize="1.2rem" />
               </Text>
             </Button>
             {/* "https://drive.google.com/drive/folders/1GHjBaSgCKpSB73A50-bNVYulySYCpWNx?usp=sharing" */}
+
             <Flex gap="3">
               <Link
                 id="contact-linkedin"
